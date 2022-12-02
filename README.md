@@ -1,5 +1,5 @@
 # ColorsPicker
-Amazing colors picker using HTML | CSS | JQuery
+Amazing colors picker using HTML & CSS & JQuery
 <div>
   <img src="https://github.com/arminmehraeen/ColorsPicker/blob/main/Photos/img1.png" width="500" height="250">
 </div>
