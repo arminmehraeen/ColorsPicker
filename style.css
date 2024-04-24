@@ -54,6 +54,27 @@
     transform: rotate(180deg);
 }
 
+.generate-gradient {
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.generate-gradient:hover {
+    transform: rotate(180deg);
+
+}
+
 .copied{
     position: fixed;
     top: 20px;
