@@ -39,7 +39,7 @@ body {
 .app-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 5px;
+    padding: 20px 0px;
 }
 
 .app-header {
