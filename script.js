@@ -64,27 +64,27 @@ class ColorPalette {
         $('.generate-gradient').click(() => this.generateGradient());
 
         // Custom color button
-        $('.custom-color').click(() => {
+        $('.color-picker-btn').click(() => {
             $('.color-picker-dialog').addClass('show');
         });
 
         // Dialog close buttons
-        $('#close-dialog, #cancel-btn').click(() => {
+        $('.close-dialog, .dialog-btn.cancel').click(() => {
             $('.color-picker-dialog').removeClass('show');
         });
 
         // Color picker input
-        $('#color-input').on('input', () => {
-            const color = $('#color-input').val();
-            $('#preview-color').css('background-color', color);
-            $('#preview-hex').text(color.toUpperCase());
+        $('#color-picker').on('input', () => {
+            const color = $('#color-picker').val();
+            $('.preview-color').css('background-color', color);
+            $('.preview-hex').text(color.toUpperCase());
             const rgb = this.hexToRgb(color);
-            $('#preview-rgb').text(`RGB(${rgb.r}, ${rgb.g}, ${rgb.b})`);
+            $('.preview-rgb').text(`RGB(${rgb.r}, ${rgb.g}, ${rgb.b})`);
         });
 
         // Apply color button
-        $('#apply-btn').click(() => {
-            const color = $('#color-input').val();
+        $('.dialog-btn.apply').click(() => {
+            const color = $('#color-picker').val();
             this.addCustomColor(color);
             $('.color-picker-dialog').removeClass('show');
         });
